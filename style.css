@@ -148,6 +148,7 @@
         display: block;
         position: relative;
         width: 100%;
+        position: fixed;
         height: 50px;
         color: white;
         background-color: rgb(46, 45, 45);
