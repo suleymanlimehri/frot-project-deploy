@@ -1,164 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yellowtail&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#nav-area .container{
+#nav-area{
+    height: 100px;
     max-width: 1200px;
     margin: 0 auto;
 }
 #nav-area .navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 100%;
 }
-#nav-area .nav-list .dropdown-menu{
-    display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 10px;
-  min-width: 200px;
-} 
-
-.nav-list li:hover .dropdown-menu {
-    display: block;
-  }
-#nav-area .nav-list a.latest-active{
-    position: relative;
-    padding: 4px;
-}
-#nav-area .nav-list a.latest-active span{
-    position: absolute;
-    width: 30px;
-    padding: 3px;
-    text-align: center;
-    right: 30px;
-    left: 35px;
-    bottom: 20px;
-    color: white;
-    font-size: 8px;
-    border-radius: 5px;
-    background-color: #ff003c;
-}
-#nav-area .nav-list ul{
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-}
-#nav-area .nav-list a{
-    padding: 10px 10px;
+#nav-area .navbar .nav-list li a{
     text-decoration: none;
     color: black;
 }
+#nav-area .nav-list ul{
+    list-style-type: none;
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
 #nav-area .right{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
-#nav-area .right input{
-    border: 1px solid rgb(245, 231, 231);
-    border-radius: 10px;
-    padding: 10px 10px;
-    width: 100px;
+#nav-area input[type="search"]{
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 3px 3px;
+    width: 60%;
+    background-color: rgb(252, 252, 245);
+}
+
+#nav-area .right .heart,.shop{
+    position: relative;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid rgb(240, 231, 231);
+    width: 30px;
+    height: 30px;
+}
+#nav-area .nav-list ul .latest{
+    position: relative;
+}
+#nav-area .nav-list .latest span{
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 8px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+}
+#nav-area .right .heart span,.shop span{
+    position: absolute;
+    top: -5px;
+    font-size: 8px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    width: 15px;
+    height: 15px;
+}
+#nav-area .right .sign-in{
+    background-color: blue;
+    width: 80px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 30px;
+}
+#nav-area .right .sign-in a{
+    text-decoration: none;
+    color: white;
+}
+.respo{
+    background-color: rgb(48, 47, 47);
+    width: 976px;
+    position: relative;
     height: 40px;
 }
-#nav-area .right .heart{
-    width: 30px;
-    position: relative;
-    height: 30px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid rgb(230, 220, 220);
-}
-#nav-area .right .heart i{
-    padding: 5px;
-}
-#nav-area .right .heart span{
+#nav-area .menu{
     position: absolute;
-    right: -6px;
-    top: 0;
-    bottom: -5px;
-    font-size: 12px;
+    right: 40px;
+    margin-top: 3px;
+    background-color: black;
     color: white;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    background-color: rgb(29, 148, 239);
-}
-#nav-area .sign-in{
-    border-radius: 30px;
-    background-color: rgb(29, 148, 239);
-    color: white;
-    text-align: center;
-    padding: 5px;
     width: 80px;
+    border-radius: 2px;
+    padding: 2px;
     height: 30px;
 }
-#nav-area .shop{
-    width: 30px;
-    text-align: center;
-    padding: 5px;
-    position: relative;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid rgb(230, 220, 220);
-}
-#nav-area .shop span{
-    position: absolute;
-    right: -6px;
-    top: 0;
-    font-size: 12px;
-    color: white;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    background-color: rgb(29, 148, 239);
-    padding: 3px;
-}
-.menu{
+.respo{
     display: none;
 }
-@media(max-width:575px){
-    .burger{
+@media(max-width:1000px) {
+    #nav-area .right .heart{
+        display: none;
+    }
+}
+@media(max-width:976px) {
+    .respo{
         display: block;
-    }
-    .nav-list{
-        display: none;
-    }
-    input[type="search"]{
-        display: none;
-    }
-    .heart{
-        display: none;
-    }
-    .sign-in{
-        display: none;
-    }
-    .shop{
-        display: block;
-    }
-    .menu{
-        display: block;
-        position: relative;
-        width: 100%;
-        position: fixed;
-        height: 50px;
-        color: white;
-        background-color: rgb(46, 45, 45);
-    }
-    .menu-span{
-        position: absolute;
-        cursor: pointer;
-        left: 10px;
-        margin-left: 450px;
-        top: 20px;
-        background-color: black;
-    }
+        width: 900px;
+        margin-left: 20px;
+        margin-top: -20px;
+        cursor: pointer;        
+}
+input[type="search"],.heart,.sign-in,.nav-list{
+    display: none;
+}
+.shop{
+    margin-right: 20px;
+}
+.logo{
+    margin-left: 20px;
+}
 }
