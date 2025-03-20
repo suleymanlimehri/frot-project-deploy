@@ -121,12 +121,7 @@
 .menu{
     display: none;
 }
-@media(max-width:1000px) {
-    .heart{
-        display: none;
-    }
-}
-@media(max-width:900px) {
+@media(min-width:1200px) and (max-width:1600px) {
     .shop{
         display: block;
         margin-right: 30px;
