@@ -83,11 +83,12 @@
     text-decoration: none;
     color: white;
 }
-.respo{
+#nav-area .respo{
     background-color: rgb(48, 47, 47);
     width: 976px;
     position: relative;
     height: 40px;
+    display: none;
 }
 #nav-area .menu{
     position: absolute;
@@ -100,18 +101,20 @@
     padding: 2px;
     height: 30px;
 }
-.respo{
-    display: none;
+@media(max-width:1000px) {
+    #nav-area .right .heart{
+        display: none;
+    }
 }
-@media(max-width:600px) {
-    .respo{
+@media(max-width:976px) {
+    #nav-area .respo{
         display: block;
-        width: 600px;
+        width: 900px;
         margin-left: 20px;
         margin-top: -20px;
-        cursor: pointer;        
+        cursor: pointer; 
 }
-input[type="search"],.heart,.sign-in,.nav-list{
+input,.heart,.nav-list,.sign-in{
     display: none;
 }
 .shop{
@@ -120,4 +123,59 @@ input[type="search"],.heart,.sign-in,.nav-list{
 .logo{
     margin-left: 20px;
 }
+}
+/* header son */
+
+/* main başlanğıc */
+#main-area{
+    background-color: aqua;
+    height: 500px;
+}
+#main-area img{
+    width: 100%;
+    height: 500px;
+}
+#main-area .text{
+    width: 400px;
+    height: 100%;
+}
+#main-area .text .discount{
+    color: #2577F9;
+    font-size: 30px;
+    font-family: 'YellowTail',sans-serif;
+}
+#main-area .text h1{
+    font-family: 'Playfair',sans-serif;
+    font-size: 70px;
+    font-weight: 40px;
+}
+#main-area .text .text-cloth{
+    font-family: 'Playfair',sans-serif;
+    font-style: italic;
+
+}
+#main-area .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+#main-area .main .text .button{
+    background-color: #2577F9;
+    color: whitesmoke;
+    border-radius: 30px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    padding: 9px 9px;
+}
+@media(max-width:1200px){
+    .text{
+        display: block;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .main-img{
+        display: none;
+    }
 }
