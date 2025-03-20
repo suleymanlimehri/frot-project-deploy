@@ -103,11 +103,6 @@
 .respo{
     display: none;
 }
-@media(max-width:1000px) {
-    #nav-area .right .heart{
-        display: none;
-    }
-}
 @media(max-width:976px) {
     .respo{
         display: block;
