@@ -103,7 +103,7 @@
 .respo{
     display: none;
 }
-@media(max-width:976px) {
+@media(max-width:600px) {
     .respo{
         display: block;
         width: 600px;
