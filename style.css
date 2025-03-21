@@ -147,9 +147,67 @@
     padding: 2px;
     height: 30px;
 }
-.menu{
+.menu {
     display: none;
-}
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu .menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .menu .bars-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .menu span {
+    font-size: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right {
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+    .menu-content {
+      justify-content: space-between;
+    }
+  
+    .nav-list {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 /* header son */
 
 /* main başlanğıc */
