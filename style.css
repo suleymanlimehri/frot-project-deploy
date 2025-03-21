@@ -551,3 +551,53 @@ width: 100%;
 #footer-area .footer-son-left{
     margin-right: 60px;
 }
+@media (max-width: 768px) {
+    #nav-area .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #nav-area .nav-list ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #main-area .main {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #category-area .category-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #latest-area .latest-right {
+        justify-content: center;
+    }
+
+    #best-product-area .product {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #best-collection-area .best-collection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #shopping-area .shopping {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #footer-area .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
